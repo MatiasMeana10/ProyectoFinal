@@ -72,6 +72,32 @@
     
 }
 @media screen and (min-width:385px) and (max-width:479px){
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+
+    .navbar .icon {
+        float: right;
+        display: block;
+    }
+
+    .navbar.responsive {
+        position: relative;
+    }
+
+    .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
     .contenido {
         margin-top:85%;
         position: absolute;
@@ -225,7 +251,32 @@
         width: 100%;
     }
 
- 
+    .navbar a {
+        width: 100%;
+    }
+
+.navbar.responsive {
+    position: relative;
+}
+
+.navbar.responsive .icon {
+    display: block;
+}
+
+.navbar.responsive a:not(:first-child) {
+    display: none;
+}
+
+.navbar.responsive a.icon {
+    float: right;
+}
+
+.navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
     .profile {
         flex: 1;
         width: auto;

@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1c1c1c;
     color: #fff;
-    gap: 30px;
+
 }
 /* nav------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
 .navbar {
@@ -32,8 +32,13 @@ body {
   .navbar a:hover {
     background-color: #76ff03;
     color: #000;
-    transition: 2s;
+    transition: 0.5s;
   }
+
+  .navbar .icon {
+    display: none;
+}
+
   
 
 /*

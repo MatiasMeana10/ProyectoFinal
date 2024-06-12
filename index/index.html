@@ -9,13 +9,26 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <div class="navbar" id="myNavar">
             <a class="active" href="#">Home</a> 
             <a href="#about-me">Sobre Mí</a>
             <a href="#stats">Estadísticas</a>
             <a href="#contact-section">Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
           </div>
     </header>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
         <div class="container-foto-profile">
             <div class="logo">
                 <img src="../assets/png-transparent-utn-hd-logo-blanco.png" alt="Logo UTN">
@@ -48,7 +61,7 @@
                         <h3>Soy un apasionado de la tecnología con 27 años de edad. Soy Analista en Sistemas de Información y actualmente me encuentro cursando el 
                             3er/4to año de Ingeniería en Sistemas de Información. Mi objetivo es convertirme en un desarrollador Full Stack altamente competente.</h3>
                         <p>En mi camino profesional, combino mis estudios con mi trabajo actual, lo cual me permite aplicar y expandir continuamente mis conocimientos en el campo de la informática.
-                            Estoy comprometido con mi formación continua, enfocado en adquirir habilidades que me permitan abarcar tanto el desarrollo front-end como el back-end.</p>
+                            Estoy enfocado en adquirir habilidades que me permitan abarcar tanto el desarrollo Front-end como el Back-end.</p>
                         <ul>
                             <h3>Conocimientos sobre: </h3>
                             <li><span style= "color: #76ff03">✔</span> Analista en Sistemas</li>
